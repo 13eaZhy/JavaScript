@@ -1,0 +1,33 @@
+<script type="text/javascript">
+
+//LEGEND
+// o - potato
+// Y - corn
+// j  - pepper
+// . - land
+
+var garden = 'ooojjooYYjYooooo..';
+var potato_price = 5;
+var corn_price = 10;
+var pepper_price = 50;
+
+var total = 0;
+
+for (var i=0;i<garden.length;i++) {
+  if (garden.charAt(i) == 'o') {
+    if (garden.charAt(i+1) == 'Y' || garden.charAt(i-1) == 'Y') {
+      total += potato_price/2;
+    } else {
+    total += potato_price;
+  }
+  } else if (garden.charAt(i) == 'Y') {
+    total += corn_price;
+  } else if (garden.charAt(i) == 'j') {
+    if (garden.charAt(i+1) == 'Y' || garden.charAt(i-1) == 'Y')
+    total += pepper_price*2;
+  } else {
+    total += pepper_price;
+  }
+}
+alert(total);
+</script>

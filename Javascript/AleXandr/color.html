@@ -1,0 +1,33 @@
+<script type="text/javascript">
+
+//Data imput
+var color = prompt ('Выбери цвет');
+var color_original = color;
+
+
+
+//Обработка
+color  = color.trim();
+if (color.startsWith('#')) {
+  if (color.length == 4 || color.length == 7 ) {
+    color = color.replace('#','0x');
+    color = +color;
+    if (isNaN(color)) {
+      alert('Wrong digit format')
+    } else {
+      alert('All GOOD!!')
+    }
+  }
+} else {
+
+}
+
+
+
+//Вывод
+document.write('<div style="width: 100px; height: 100px; background:' + color_original + '"></div>');
+
+
+
+
+</script>

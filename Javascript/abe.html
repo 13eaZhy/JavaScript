@@ -1,0 +1,52 @@
+<script>
+
+class User {
+
+      constructor (login,avatar,pass,mail) {
+
+           this.login =login;
+           this.avatar=avatar;
+           if (pass==undefined) {
+           this.pass =123456;
+     } else {
+           this.pass=pass;
+     }
+           this.mail=mail;
+
+}
+
+render() {
+     document.write(`<h2>${this.login}</h2>`, `<h2>${this.pass}</h2>`, `<img src =${this.avatar}>`);
+
+}
+}
+
+
+
+
+var user1 = new User("iurik77", "https://www.picsum.photos/100/100", "12345", "iura@mail.ru");
+
+
+
+var user2 = new User("murik88");
+//onsole.log(user1);
+//console.log(user2);
+user1.render();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

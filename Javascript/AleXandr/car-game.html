@@ -1,0 +1,27 @@
+<script type="text/javascript">
+
+var road = '...<......';
+var br = '</br>'
+document.write(road + br);
+
+if (road.includes('>') || road.includes('<')) {
+  document.write('There is a car' + br);
+  if (road.includes('>')) {
+    document.write('Car to right' + br);
+  } else {
+    document.write('Car to left' + br);
+  }
+  ///////////////////////////////////////
+  for (var n=1; n<=3; n++) {
+    var direction = prompt ('Where to go?');
+    if (direction == 'left') {
+      var i = road.indexOf('<');
+      road = road.replace('.<','<.');
+      document.write(road + br);
+    }
+  }
+  ////////////////////////////////
+} else {
+  document.write('There is NO a car' + br);
+}
+</script>

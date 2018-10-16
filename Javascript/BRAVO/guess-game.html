@@ -1,0 +1,23 @@
+<script>
+  var number = Math.round(Math.random()*100);
+  alert("Ready to start the game? ");
+  var n=1;
+  while ( n <= 10){
+  var guess=prompt("You guess? number from 1 to 100");
+
+  if(guess==number){
+    alert("You damn right !");
+    alert ("You won 100000$ !!!")
+    break;
+  }
+  if (guess >= 100) {
+    alert("This number is not in list")
+  }
+   if(guess > number){
+    alert("Our number is smaller");
+  }
+   if (guess < number){
+    alert("Our number is bigger");
+  }
+}
+</script>

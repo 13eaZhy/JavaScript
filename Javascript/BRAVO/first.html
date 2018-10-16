@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TEST</title>
+</head>
+<body>
+  <script>
+  const pret_pizza = 80;
+  const pret_suc = 30;
+  const pret_salat = 60;
+
+  comanda_pizza = prompt (" Cate pizza doriti? ");
+  total_pizza = pret_pizza * comanda_pizza;
+  comanda_suc = prompt (" Cat suc doriti? ");
+  total_suc = pret_suc * comanda_suc;
+  comanda_salat = prompt (" Cata salata doriti?");
+  total_salat = pret_salat * comanda_salat;
+
+  total_pizza = pret_pizza * comanda_pizza;
+    total_suc = pret_suc * comanda_suc;
+      total_salat = pret_salat * comanda_salat;
+
+      total = total_pizza + total_suc + total_salat;
+
+      alert ("Total spre achitare : " + total + " lei" )
+
+      if ( total > 300) {
+        alert ("Suma depaseste 300 lei, LIVRARE VA FI GRATUITA");
+
+          if (total > 1000) {
+            alert ("AVETI REDUCERE 20%, total spre achitare : " + (total-(total*0.2)) );
+          }
+
+      } else {
+        total+=50;
+        alert ("Suma este pina la 300 lei, LIVRAREA VA COSTA 50 LEI, total spre achitare: " + total + " lei")
+      }
+
+  </script>
+</body>
+</html>

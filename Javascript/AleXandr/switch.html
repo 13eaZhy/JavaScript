@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  var day = prompt('Какой сегодня по порядку день?');
+  switch (day) {
+    case '1': alert ('понедельник');break;
+    case '2': alert ('вторник');break;
+    case '3': alert ('среда');break;
+    case '4': alert ('четверг');break;
+    case '5':
+        alert ('пятница');
+        var money = prompt('Сколько у тебя денег');
+        if (money>=5000) {
+          alert ('Нормально')
+        } else {
+          alert ('Маловато будет')
+        };
+        break;
+    case '6': alert ('суббота выходной');break;
+    case '7': alert ('воскресенье выходной');break;
+    default: alert ('Не наглей!!!');
+  }
+
+</script>

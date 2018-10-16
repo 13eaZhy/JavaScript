@@ -1,0 +1,19 @@
+<script>
+
+var username_input = (prompt("username:?")).trim();          // "user@mymail.local"
+var password_input = (prompt("password:?")).trim();          // "myp@ss123";
+var confirm__input = (prompt("confirm password:?")).trim();  // "myp@ss123";
+
+if (username_input.length>2 && password_input.length>2 && confirm__input.length>2) {
+  if (password_input == confirm__input) {
+    if (username_input.indexOf('@')>0 && username_input.indexOf('.')>0 && username_input.indexOf('.')>username_input.indexOf('@')) {
+      alert('registration complete');
+      } else {alert('registration failed \nfollow email for username')}
+  } else {alert('registration failed \npassword confirm is incorrect')}
+} else {alert('registration failed \nenter more than 3 items')}
+
+
+
+
+
+</script>

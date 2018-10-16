@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IMAGE</title>
+</head>
+<body>
+  <script>
+    function img ( url ){
+      return "<img src= '" + url + "'/>";
+    }
+    document.write( img ( url = prompt ( "Paste your url of img here: ")) ) ;
+    document.write ( "<br>" );
+
+    function a ( url, TEXT ){
+      return "<a href= '"+url+"'>" + TEXT + "</a>";
+    }
+
+    document.write ( a ( "http://vanar.md", "PRESS HERE"));
+    document.write ( "<br>" );
+
+    function b ( url, img){
+      return "<a href='"+url+"' ><img src='"+img+"'></a>"
+    }
+    document.write ( b ("http://vanar.md", "https://picsum.photos/100/100/?image=280"));
+    document.write ( "<br>" );
+
+    function h1( title ){
+      return "<h1>" +title+ "</h1>";
+      }
+    document.write ( h1 ( "H1 TEXT"));
+
+
+    function calculateSalary ( hours ){
+        var earn = 10;
+        document.write (" Your salary per hour is : " + earn + " USD <br>");
+      return earn * hours;
+    }
+
+    var salaryTotal = calculateSalary ( hours = prompt ( "Enter how much hours you worked this month: "));
+    document.write ( " This month your worked : " + hours + " hours <br>");
+
+    function calculateTax (){
+      return 0.12 * salaryTotal;
+    }
+    var tax = calculateTax ( );
+    document.write (" Your salary is : " + salaryTotal + " USD <br>");
+    document.write ( "You have to pay : " + tax + " USD tax" );
+  </script>
+</body>
+</html>

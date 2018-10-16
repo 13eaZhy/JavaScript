@@ -1,0 +1,17 @@
+<script>
+var number = parseInt(Math.random()*100);
+//console.log (number);
+var tries = 7;
+while (tries!=0) {
+  var n= prompt('What number is it: ?');
+  if ( n == number ) {
+    alert ('Yeee!!!');break;
+  } else if (n>number){
+    alert ('Too big');
+  } else {
+    alert ('Too small');
+  }
+  tries--;
+}
+alert('Game over');
+</script>

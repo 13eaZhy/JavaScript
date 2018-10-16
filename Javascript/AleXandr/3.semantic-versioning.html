@@ -1,0 +1,21 @@
+<script>
+
+var version_old    = "2.0.0";
+var version_new    = "1.0.1";
+
+for (i=0;i<=4;i++) {
+  if (+version_new.charAt(i) > +version_old.charAt(i)) {
+    if (i == 0) {
+      alert ('There is a new global version'); break;
+    } else {
+    alert('There is a new version');break;
+  }
+} else if (+version_new.charAt(i) < +version_old.charAt(i)) {
+  alert ('No new version'); break;
+}
+}
+
+
+
+
+</script>

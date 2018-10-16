@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+//LEGEND
+// o - potato
+// Y - corn
+// j  - pepper
+// . - land
+
+var garden = 'oooooYYYooooojj...';
+var potato_price = 5;
+var corn_price = 10;
+var pepper_price = 50;
+
+var total = 0;
+
+for (var i=0;i<garden.length;i++) {
+  if (garden.charAt(i) == 'o') {
+    total += potato_price;
+  } else if (garden.charAt(i) == 'Y') {
+    total += corn_price;
+  } else if (garden.charAt(i) == 'j') {
+    total += pepper_price;
+  }
+}
+alert(total);
+</script>

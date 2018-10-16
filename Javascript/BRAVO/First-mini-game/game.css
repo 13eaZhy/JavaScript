@@ -1,0 +1,10 @@
+body{
+  background-color: #333;
+}
+h3{
+  text-align: center;
+  color: red;
+}
+td{
+  cursor: pointer;
+}

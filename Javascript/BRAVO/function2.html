@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proj 2</title>
+</head>
+<body>
+  <script>
+  language = prompt ( " Choose your language \n Press 1 for English \n Press 2 for Romanian")
+    function hello ( person , language) {
+      switch (language){
+        case "1" : alert ( " Your language is English");break;
+        case "2" : alert ( " Your language is Romanian"); break;
+      }
+      if ( language == 1){
+        if ( person == undefined && language == undefined){
+          alert ( " Hello! ");
+        } else {
+          alert (  " Hello " + person + " !");
+        }
+      }
+
+     if ( language == 2){
+       if ( person == undefined && language == undefined){
+         alert ( " Salut! ");
+       } else if ( language == undefined ){
+         alert ( " Salut " + person );
+       } else {
+         alert (  person + language);
+       }
+     }
+
+    }
+    hello();
+
+  </script>
+</body>
+</html>

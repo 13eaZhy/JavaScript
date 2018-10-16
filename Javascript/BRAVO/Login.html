@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+ // var value = prompt(" What is my name? ");
+ // if (value == "Ion") {
+ // alert("You damn right !");
+ // } else {
+ //  alert(" You don't know? My name is Ion");
+ // }
+
+ // var number = prompt ("Insert a number : ");
+ // if (number > 0 ) {
+ // alert (" 1 ");
+ // }
+ // if (number < 0) {
+ // alert (" -1 ");
+ // }
+ // if (number == 0 ) {
+ // alert (" 0 ");
+ // }
+
+var login = prompt (" Please enter your login : ");
+if (login == "Admin") {
+  var password = prompt (" Insert your password : ");
+   if (password == "123") {
+     alert ( "WELCOME MY LORD !" );
+   } else if ( password == null){
+     alert (" ACTION CANCELED")
+   } else {
+     alert (" Your password is wrong");
+   }
+} else if (login == null){
+  alert ( "Action is canceled")
+} else {
+  alert ( "Your login is wrong !")
+}
+
+
+
+
+ </script>
+</body>
+</html>

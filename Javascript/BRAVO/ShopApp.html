@@ -1,0 +1,76 @@
+<script>
+// var wishList;
+// var list = "Your shopping bag: ";
+// var virgula = ", ";
+// for (var i = 1 ; i <= 5; i++){
+// wishList = prompt("What do you want to order ? ");
+// if (i == 5){
+//   virgula = ".";
+// }
+// list += wishList + virgula;
+// }
+// document.write (list);
+//
+// for ( var n=10 ; n >= 0 ; n--)
+// if (n%2==1){
+// document.write(n + "<br>");
+// }
+//
+// document.write("<br> ---------- <br> <br>")
+//
+// for ( var k=10; k >= 0 ; k--)
+// if (k%2==0){
+//   document.write(k + "<br>");
+// }
+//
+// var day = prompt("Which day is today? ");
+//
+// switch ( day ){
+//   case "1": alert (" Luni "); break;
+//   case "2": alert (" Marti "); break;
+//   case "3": alert (" Miercuri "); break;
+//   case "4": alert (" Joi "); break;
+//   case "5": alert (" Vineri "); break;
+//   case "6": alert (" Simbata "); break;
+//   case "7": alert (" Duminica "); break;
+//   default: alert ("There is no day like this"); break;
+// }
+
+const MENU = "1. Soup	\u2666 \n2. Zeama \u2666 \n3. Hrisca \u2666 \n4. ORDER ! \u2666";
+
+while(option !=4){
+
+var option = +prompt (MENU);
+var totalCost=0;
+
+switch (option) {
+  case 1: alert ("Soup costs 30 lei"); break;
+  case 2: alert ("Zeama costa 30 lei"); break;
+  case 3: alert ("Hrisca costa 70 lei"); break;
+  case 4: alert ("Total : " + totalCost); break;
+
+  default : alert ("BYE"); break;
+
+
+  }
+  if ( option == 1){
+    totalCost += 30;
+  } else if ( option == 2){
+    totalCost +=30;
+  } else if ( option == 3){
+    totalCost +=70;
+  } else if ( option == 4){
+    alert ("Total to pay: " + totalCost + " Lei ")
+  }
+}
+
+// if ( option == 1){
+//   totalCost += 30;
+// } else if ( option == 2){
+//   totalCost +=30;
+// } else if ( option == 3){
+//   totalCost +=70;
+// } else if ( option == 4){
+//   alert ("Total to pay: " + totalCost + " Lei ")
+// }
+</script>

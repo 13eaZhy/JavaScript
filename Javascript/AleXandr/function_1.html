@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+      function tick() {
+        document.body.innerHTML = '<h1>' + Date() + '</h1>';
+        var d = new Date();
+        if (d.getSeconds() % 2 == 0) {
+          document.title = "*****";
+        } else {
+          document.title = "#####";
+        }
+      }
+      setInterval(tick,1000);
+    </script>
+  </body>
+</html>

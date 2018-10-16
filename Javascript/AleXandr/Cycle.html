@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+  for (var n=1;n<=1000;n++) {
+    var colorr = parseInt(Math.random()*255);
+    var colorg = parseInt(Math.random()*255);
+    var colorb = parseInt(Math.random()*255);
+
+    document.write ('<div style="background: rgb('+colorr+','+colorg+','+colorb+');"></div>')
+  }
+  location.reload();
+  </script>
+
+
+
+</body>
+</html>

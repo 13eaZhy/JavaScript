@@ -1,0 +1,24 @@
+<script>
+
+var message = 'Hey! I have 1000$!'
+
+var index = message.indexOf('$');
+var money = '';
+if (index != -1) {
+alert(index);
+  while (index > 0) {
+    index--;
+    if (message.charAt(index) >= '0' && message.charAt(index) <= '9') {
+      money = message.charAt(index) + money;
+    }
+  }
+alert(money);
+
+
+
+
+
+} else {
+  alert('$ not found')
+}
+</script>

@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  //DATA
+  var price_burger = 45;
+  var qty_burger = 2;
+  var description_burger = 'Very bun, pleasant to taste';
+  var full_burger = "You choose BURGER\n"
+                  + description_burger + '\n\n'
+                  + 'Pretul: ' + price_burger + ' MDL\n'
+                  + 'ENTER QUANTITY...';
+
+var price_pizza = 70;
+var qty_pizza = 10;
+var description_pizza = 'The best pizza in city';
+var full_pizza = "You choose PIZZA\n"
+                + description_pizza + '\n\n'
+                + 'Pretul: ' + price_pizza + ' MDL\n'
+                + 'ENTER QUANTITY...';
+
+var price_kebab = 35;
+var qty_kebab = 8;
+var description_kebab = 'Original georgian kebab';
+var full_kebab = "You choose KEBAB\n"
+                + description_kebab + '\n\n'
+                + 'Pretul: ' + price_kebab + ' MDL\n'
+                + 'ENTER QUANTITY...';
+
+var price_cola = 10;
+var qty_cola = 6;
+var description_cola = 'Enjoy Coca-Cola';
+var full_cola = "You choose COLA\n"
+                + description_cola + '\n\n'
+                + 'Pretul: ' + price_cola + ' MDL\n'
+                + 'ENTER QUANTITY...';
+
+var price_beer = 20;
+var qty_beer = 1;
+var description_beer = 'Premium taste of original Guiness';
+var full_beer = "You choose BEER\n"
+                + description_beer + '\n\n'
+                + 'Pretul: ' + price_beer + ' MDL\n'
+                + 'ENTER QUANTITY...';
+
+  var menu= "================\n"
+          + "FOOD\n"
+          + "\t\t1. Burger\n"
+          + "\t\t2. Pizza\n"
+          + "\t\t3. Kebab\n"
+          + "DRINKS\n"
+          + "\t\t4. Cola\n"
+          + "\t\t5. Beer\n"
+          + "==============\n"
+          + "\t\t0. ORDER!\n"
+          + "CHOOSE >>>";
+var total_order = 0;
+
+while (true) {
+  //USER INPUT
+  var option = prompt(menu);
+  //PROCESS INPUT
+  if (option == "1" ) {
+    var q = prompt(full_burger);
+      if (q>qty_burger) {
+        if (confirm('SORRY! We have only ' + qty_burger + ' PCS\n'
+                                  + 'Do you want to order it?')) {
+                                    q = qty_burger;
+                                  } else {q=0;}
+      }
+    var order = q * price_burger;
+  }
+  if (option == "2" ) {
+    var q = prompt(full_pizza);
+      if (q>qty_pizza) {
+        if (confirm('SORRY! We have only ' + qty_pizza + ' PCS\n'
+                                  + 'Do you want to order it?')) {
+                                    q = qty_pizza;
+                                  } else {q=0;}
+      }
+    var order = q * price_pizza;
+  }
+  if (option == "3" ) {
+    var q = prompt(full_kebab);
+      if (q>qty_kebab) {
+        if (confirm('SORRY! We have only ' + qty_kebab + ' PCS\n'
+                                  + 'Do you want to order it?')) {
+                                    q = qty_kebab;
+                                  } else {q=0;}
+      }
+    var order = q * price_kebab;
+  }
+  if (option == "4" ) {
+    var q = prompt(full_cola);
+      if (q>qty_cola) {
+        if (confirm('SORRY! We have only ' + qty_cola + ' PCS\n'
+                                  + 'Do you want to order it?')) {
+                                    q = qty_cola;
+                                  } else {q=0;}
+      }
+    var order = q * price_cola;
+  }
+  if (option == "5" ) {
+    var q = prompt(full_beer);
+      if (q>qty_beer) {
+        if (confirm('SORRY! We have only ' + qty_beer + ' PCS\n'
+                                  + 'Do you want to order it?')) {
+                                    q = qty_beer;
+                                  } else {q=0;}
+      }
+    var order = q * price_beer;
+  }
+//Exit with order
+  if (option == '0') {
+      alert('YOUR TOTAL ORDER: ' + total_order + ' MDL\n'
+             + 'THANK YOU!!!!');
+     break;
+  }
+// Защита от неправильного ввода и подсчет заказа
+  if (option!='0' && option!='1' && option!='2' && option!='3' && option!='4' && option!='5') {
+    alert('ENTER CORRECT NUMBER');
+  } else {
+    alert('In CART added order for ' + order + ' MDL');
+    total_order = total_order + order;
+  }
+ }
+
+
+</script>
+</body>
+</html>

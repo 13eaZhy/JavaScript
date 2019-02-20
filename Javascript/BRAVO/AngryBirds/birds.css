@@ -15,3 +15,65 @@ body{
   height: 48px;
   position: absolute;
 }
+
+#hp{
+  width: 200px;
+  height: 20px;
+  background-color: #999;
+  position: absolute;
+  top: 550px;
+  left: 180px;
+}
+
+#hpBirds1 span{
+  margin-left: 30px;
+}
+
+#icon1{
+  background-image: url(bird1hp.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 10px;
+  top: 2px;
+}
+
+#hpBirds2 span{
+  margin-left: 30px;
+}
+
+#icon2{
+  background-image: url(bird2hp.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 50px;
+  top: 2px;
+}
+
+#hpBirds2 span{
+  margin-left: 30px;
+}
+
+#icon2{
+  background-image: url(bird3hp.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 50px;
+  top: 2px;
+}
+
+#map .bird.b-2{
+  background-image: url(bird-2.png);
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+
+#map .bird.b-3{
+  background-image: url(bird-3.png);
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}

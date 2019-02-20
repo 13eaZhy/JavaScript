@@ -1,0 +1,42 @@
+DOM / BOM Javascript
+
+Document Object Model
+Browser Object Model
+
+Browser  =---->  Application
+       (engines)
+
+WEB API -> Application Programming Interface
+
+BOM : Window (Window)
+      navigator () - citirea la tot ce-i legat de browser;
+      screen () - orientation, width, height;
+      location () - URL unde se afla userul
+      location = "https://vanar.md";
+      frames - cadrele deschise in browser
+      history - istoria la fereastra curenta
+      XMLHttpRequest AJAX
+
+DOM : Document ----> WEB Page
+      Structure => Objects
+    Elements:
+      -Atributes
+      -Style :
+          *find/navigate
+          *remove
+          *copy
+          *update
+    Events
+    Resources
+http://learn.javascript.ru/traversing-dom
+
+document <----- Object
+         //shortcuts
+         document.title
+         document.head
+         document.body
+         document.links[]
+         document.images[]
+         document.forms[]
+         document.fonts[] !!!-se foloseste rar
+         document.scripts[]

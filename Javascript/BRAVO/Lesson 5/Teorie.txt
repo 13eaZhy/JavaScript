@@ -1,0 +1,8 @@
+el.className =---> String
+el.classList ---> list / collection of classes
+el.id
+el.style
+el.src
+delete el.id
+el.id = "";
+el.innerHTML

@@ -1,0 +1,42 @@
+body{
+  background-color: #333;
+}
+
+#chat{
+  width: 50vw;
+  height: 100vh;
+  margin-left: 25vw;
+  background-color: #555;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+#chat .messages{
+  width: 95%;
+  margin: 2.5%;
+  height: 70%;
+  background-color: #BBB;
+}
+
+#chat .input{
+  width: 95%;
+  margin: 2.5%;
+  height: 25%;
+  background-color: #666;
+}
+
+#chat .input input{
+  padding: 10%;
+  width: 80%;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+#chat .input button{
+  padding: 10% 5%;
+  width: 18%;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: #78A;
+  color: white;
+}

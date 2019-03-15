@@ -1,0 +1,13 @@
+JS (browser) <-------------> Server (site backend
+                                      / services API)
+                            + DB/FILE
+  AJAX (OLD) R&R ( REQUEST AND RESPONSE)
+  Fetch API
+  Websockets / Socket.IO
+
+  HTTP / HTTPS
+  *verbs (GET/POST...)
+  *headers
+  *content-type / MIME type
+  *statuses / connection / session(200-ok, 404 - not found etc....)
+  *
